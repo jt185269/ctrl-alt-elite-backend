@@ -1,6 +1,7 @@
 from flask import Flask, send_from_directory, jsonify, request
 from flask_restful import Api, Resource, reqparse
 from flask_cors import CORS
+import ast
 
 app = Flask(__name__)
 CORS(app)
@@ -18,20 +19,23 @@ def testpage():
         }
 
 @app.route('/api/login', methods=['GET', 'POST'])
-def login(user):
-    thisUser = {
-        "userID" : 1,
-        "name" : "James",
-        "email" : "James@James.com",
-        "password" :  "password",
-        "companyID" : 1
-    }
+def login():
+    if request.method == 'POST':
+        try:
+            req = ast.literal_eval(request.data.decode('utf-8'))
+            myUser = req['Email']
+            myPass = req['Password']
+            thisUser = {
+                "userID" : 1,
+                "name" : "James",
+                "email" : "James@James.com",
+                "password" :  "password",
+                "companyID" : 1
+            }
 
-    if (user.email == thisUser["email"] and user.password == thisUser["password"]):
-        return {
-            "auth" : True
-        } 
-    else:
-        return {
-        "auth" : False
-    }
+            if myUser == thisUser["email"] and myPass == thisUser["password"]:
+                return { "auth" : True } 
+            else:
+                return { "auth" : False }
+        except: 
+            raise Exception("Failed to login")
