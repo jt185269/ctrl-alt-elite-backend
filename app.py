@@ -9,6 +9,29 @@ api = Api(app)
 @app.route('/')
 def testpage():
     try: 
-        return '<h1>Connected to db :)</h1>'
+        return {
+            "text": "Hello from server :)"
+        }
     except Exception as e:
-        return '<h1>Not connected to db :(</h1>'
+        return {
+            "text": "hmm, something went wrong rip :(("
+        }
+
+@app.route('/api/login', methods=['GET', 'POST'])
+def login(user):
+    thisUser = {
+        "userID" : 1,
+        "name" : "James",
+        "email" : "James@James.com",
+        "password" :  "password",
+        "companyID" : 1
+    }
+
+    if (user.email == thisUser["email"] and user.password == thisUser["password"]):
+        return {
+            "auth" : True
+        } 
+    else:
+        return {
+        "auth" : False
+    }
