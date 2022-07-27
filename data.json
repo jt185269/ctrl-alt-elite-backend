@@ -1,6 +1,195 @@
 {
 	"Companies": [{
 		"CompanyID": "1",
-		"CompanyName": "NCR Profit Pro"
+		"CompanyName": "NCR Profit Pro",
+        "Expenses": [
+            {
+                "Name": "Pay",
+                "Date": "2019",
+                "Value": "211200"
+            },
+            {
+                "Name": "Stock",
+                "Date": "2019",
+                "Value": "100000"
+            },
+            {
+                "Name": "Pension",
+                "Date": "2019",
+                "Value": "2400"
+            },
+            {
+                "Name": "Tax (Corporate)",
+                "Date": "2019",
+                "Value": "11324"
+            },
+            {
+                "Name": "Tax (VAT)",
+                "Date": "2019",
+                "Value": "11920"
+            },
+            {
+                "Name": "Insurance",
+                "Date": "2019",
+                "Value": "2000"
+            },
+            {
+                "Name": "Loan",
+                "Date": "2019",
+                "Value": "6000"
+            },
+            {
+                "Name": "Pay",
+                "Date": "2020",
+                "Value": "211200"
+            },
+            {
+                "Name": "Stock",
+                "Date": "2020",
+                "Value": "100000"
+            },
+            {
+                "Name": "Pension",
+                "Date": "2020",
+                "Value": "2450"
+            },
+            {
+                "Name": "Tax (Corporate)",
+                "Date": "2020",
+                "Value": "76000"
+            },
+            {
+                "Name": "Tax (VAT)",
+                "Date": "2020",
+                "Value": "80000"
+            },
+            {
+                "Name": "Insurance",
+                "Date": "2020",
+                "Value": "2000"
+            },
+            {
+                "Name": "Loan",
+                "Date": "2020",
+                "Value": "6000"
+            },
+            {
+                "Name": "Pay",
+                "Date": "2021",
+                "Value": "211200"
+            },
+            {
+                "Name": "Stock",
+                "Date": "2021",
+                "Value": "104000"
+            },
+            {
+                "Name": "Pension",
+                "Date": "2021",
+                "Value": "2500"
+            },
+            {
+                "Name": "Tax (Corporate)",
+                "Date": "2021",
+                "Value": "95000"
+            },
+            {
+                "Name": "Tax (VAT)",
+                "Date": "2021",
+                "Value": "100000"
+            },
+            {
+                "Name": "Insurance",
+                "Date": "2021",
+                "Value": "2500"
+            },
+            {
+                "Name": "Loan",
+                "Date": "2021",
+                "Value": "7000"
+            },
+            {
+                "Name": "Pay",
+                "Date": "2022",
+                "Value": "211200"
+            },
+            {
+                "Name": "Stock",
+                "Date": "2022",
+                "Value": "106000"
+            },
+            {
+                "Name": "Pension",
+                "Date": "2022",
+                "Value": "2500"
+            },
+            {
+                "Name": "Tax (Corporate)",
+                "Date": "2022",
+                "Value": "96216"
+            },
+            {
+                "Name": "Tax (VAT)",
+                "Date": "2022",
+                "Value": "101280"
+            },
+            {
+                "Name": "Insurance",
+                "Date": "2022",
+                "Value": "4000"
+            },
+            {
+                "Name": "Loan",
+                "Date": "2022",
+                "Value": "10000"
+            }
+    ],
+    "Income": [
+        {
+            "Name": "Sales",
+            "Date": "2019",
+            "Value": "600000"
+        },
+        {
+            "Name": "Subsidy",
+            "Date": "2019",
+            "Value": "2000"
+        },
+        {
+            "Name": "Loan",
+            "Date": "2019",
+            "Value": "100000"
+        },
+        {
+            "Name": "Sales",
+            "Date": "2020",
+            "Value": "400000"
+        },
+        {
+            "Name": "Subsidy",
+            "Date": "2020",
+            "Value": "2000"
+        },
+        {
+            "Name": "Sales",
+            "Date": "2021",
+            "Value": "1000000"
+        },
+        {
+            "Name": "Subsidy",
+            "Date": "2021",
+            "Value": "2000"
+        },
+        {
+            "Name": "Sales",
+            "Date": "2022",
+            "Value": "1006400"
+        },
+        {
+            "Name": "Subsidy",
+            "Date": "2022",
+            "Value": "2000"
+        }
+    ]
 	}]
 }
