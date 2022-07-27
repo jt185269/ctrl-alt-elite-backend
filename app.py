@@ -1,7 +1,9 @@
-from flask import Flask, send_from_directory, jsonify, request
+from flask import Flask, send_from_directory, jsonify, request, send_file
 from flask_restful import Api, Resource, reqparse
 from flask_cors import CORS
+import json
 import ast
+import sys
 
 app = Flask(__name__)
 CORS(app)
@@ -39,3 +41,15 @@ def login():
                 return { "auth" : False }
         except: 
             raise Exception("Failed to login")
+
+
+@app.route('/api/datafetch', methods=['GET', 'POST'])
+def dataFetch():
+    if request.method == 'GET':
+        try:
+            with open("./data.json", 'r') as f:
+                data = f.read()
+            companyData = json.dumps(data)
+            return (companyData)
+        except: 
+            raise Exception("Failed to load file")
