@@ -1,0 +1,14 @@
+{
+    "Events": [
+        {
+            "Start": "Wed Jul 27 2022 18:00:00 GMT +0100 (British Summer Time)",
+            "End": "Wed Jul 27 2022 19:00:00 GMT +0100 (British Summer Time)",
+            "Title": "Test Event 1"
+        },
+        {
+            "Start": "Wed Jul 27 2022 20:00:00 GMT +0100 (British Summer Time)",
+            "End": "Wed Jul 27 2022 21:00:00 GMT +0100 (British Summer Time)",
+            "Title": "Test Event 2"
+        }        
+    ]
+}

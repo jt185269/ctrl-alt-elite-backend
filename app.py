@@ -53,3 +53,36 @@ def dataFetch():
             return (companyData)
         except: 
             raise Exception("Failed to load file")
+
+@app.route('/api/loadcalendar', methods=['GET', 'POST'])
+def loadCalendar():
+    if request.method == 'GET':
+        try:
+            with open("./calendar.json", 'r') as f:
+                data = f.read()
+            calendarData = json.dumps(data)
+            return (calendarData)
+        except: 
+            raise Exception("Failed to load file")
+
+@app.route('/api/addtocalendar', methods=['GET', 'POST'])
+def addToCalendar():
+    if request.method == 'GET':
+        try:
+            with open("./data.json", 'r') as f:
+                data = f.read()
+            companyData = json.dumps(data)
+            return (companyData)
+        except: 
+            raise Exception("Failed to load file")
+
+@app.route('/api/removefromcalendar', methods=['GET', 'POST'])
+def removeFromCalendar():
+    if request.method == 'GET':
+        try:
+            with open("./data.json", 'r') as f:
+                data = f.read()
+            companyData = json.dumps(data)
+            return (companyData)
+        except: 
+            raise Exception("Failed to load file")
